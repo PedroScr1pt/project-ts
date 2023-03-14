@@ -1,0 +1,32 @@
+version: '3.9'
+
+volumes:
+  cache:
+    driver: local
+  database:
+    driver: local
+
+services:
+  cache:
+    image: redis
+    command: redis-server --save 60 1 --loglevel warning --port ${REDIS_PORT}
+    ports:
+      - '${REDIS_PORT}:${REDIS_PORT}'
+    volumes:
+      - cache:/data
+
+  database:
+    image: postgres:13
+    ports:
+      - '${DB_PORT}:${DB_PORT}'
+    volumes:
+      - database:/data
+    environment:
+      POSTGRES_USER: '${DB_USERNAME}'
+      POSTGRES_PASSWORD: '${DB_PASSWORD}'
+      POSTGRES_DB: '${DB_NAME}'
+      PGPORT: '${DB_PORT}'
+
+
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
