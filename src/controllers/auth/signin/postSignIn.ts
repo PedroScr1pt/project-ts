@@ -1,7 +1,6 @@
 import { BaseRequest } from '../../../middleware/types';
 import bcrypt from 'bcrypt';
 import { validateUser  } from '../../../data-access';
-import { Jwt } from 'jsonwebtoken';
 import jwt from 'jsonwebtoken';
 
 
