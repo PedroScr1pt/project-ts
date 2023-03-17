@@ -4,9 +4,8 @@ import morgan from 'morgan';
 import routers from './routes';
 import { database, logs } from './middleware';
 
-
-
 class Server {
+
     private app: Application
     private port: string
     

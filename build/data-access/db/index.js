@@ -19,10 +19,11 @@ const db = (database) => {
                 });
             },
         };
+        console.log("Database connection successful");
         return db;
     }
     catch (error) {
-        return error;
+        return console.log(error);
     }
 };
 exports.db = db;

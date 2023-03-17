@@ -2,6 +2,7 @@ import { Pool } from 'pg';
 import config from '../../config';
 import { logger } from '../../middleware';
 
+
 export const db = (database: string) => {
   try {
     const pool = new Pool({
@@ -17,8 +18,9 @@ export const db = (database: string) => {
         });
       },
     };
+    console.log("Database connection successful")
     return db;
   } catch (error) {
-    return error;
+    return console.log(error);
   }
 };

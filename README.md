@@ -19,4 +19,4 @@ Ejecute [npm i ] para la instalacion de dependencias
 
 ### Modulo de autenticación (Sign In y Sign Up) 🆗
 
-### Modulo de articulos en proceso ⛔
+### Modulo de articulos en proceso 🆗
