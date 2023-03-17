@@ -1,22 +1,22 @@
-# Project Backend (Nodejs, Typescript)
+# Proyecto Backend (Nodejs, Typescript)
 
-## Proyecto elaborado con tecnologias para escalabilidad y tipado en la programacion
+## Proyecto elaborado con tecnologias para escalabilidad y tipado en la programación
+```
+° Para iniciar el proyecto:
 
-### Para iniciar el proyecto:
+Ejecute [npm i ] para la instalacion de dependencias y Devdependencias
 
-Ejecute [npm i ] para la instalacion de dependencias
-
-### Comandos 
+° Comandos 
 
 [Yarn dev]: Corre el servidor del proyecto.
 
 [Yarn docker-compose:up]: Levanta la base de datos y redis en un contenedor de docker
+```
 
+* Modulo de servidor y configuracion de typescript con node 🆗
 
-## by: Juan Pedro Celis Catzin
+- Modulo de autenticación (Sign In y Sign Up) 🆗
 
-### Modulo de servidor y configuracion de typescript con node 🆗
+* Modulo de articulos (CRUD) 🆗
 
-### Modulo de autenticación (Sign In y Sign Up) 🆗
-
-### Modulo de articulos en proceso 🆗
+by: Pedr0scr1pt : Celiscatzin2000@gmail.com
