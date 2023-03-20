@@ -17,4 +17,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./database"), exports);
 __exportStar(require("./types"), exports);
 __exportStar(require("./logs"), exports);
+__exportStar(require("./multer"), exports);
 //# sourceMappingURL=index.js.map

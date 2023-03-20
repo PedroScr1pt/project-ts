@@ -28,3 +28,4 @@ CREATE TABLE article (
     "createdAt" TIMESTAMP NOT NULL,
     "updatedAt" TIMESTAMP NULL
 );
+
