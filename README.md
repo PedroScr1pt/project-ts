@@ -19,4 +19,9 @@ Ejecute [npm i ] para la instalacion de dependencias y Devdependencias
 
 * Modulo de articulos (CRUD) 🆗
 
+Documentacion y consultas del proyecto (Googe Drive) 
+ https://drive.google.com/drive/folders/1-wMsjKAoEcNZccqSRuoDhFshCEDxYjSG?usp=sharing 
+
 by: Pedr0scr1pt : Celiscatzin2000@gmail.com
+
+
