@@ -5,11 +5,8 @@ import path from 'path';
     const storage = multer.diskStorage({
         destination:'./documents',
         filename:(req,file,cb)=>{
-            cb(null,"Document"+file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
+            cb(null,"Document_"+file.fieldname + '_' + Date.now()+"_"+ path.extname(file.originalname))
         },
     })
-    
-
-
 export default multer({storage})
 

@@ -6,7 +6,7 @@ export async function deletearticleDA(
 ) {
   try {
     const { rows } = await db.query(DELETE_ARTICLE, [idArticle]);
-    if (!rows.length) { return console.log("error") }
+    if (!rows.length) return console.log("error")
     return rows[0]
   } catch (error) {
     console.log('error', error);

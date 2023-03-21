@@ -9,15 +9,6 @@ CREATE TABLE users (
 
 
 );
-
-
-CREATE TABLE rol(
-    id SERIAL NOT NULL PRIMARY KEY,
-    rol_name VARCHAR(10) NOT NULL,
-    "createdAt" TIMESTAMP NOT NULL,
-    "updatedAt" TIMESTAMP NOT NULL
-);
-
 CREATE TABLE article (
     id SERIAL NOT NULL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -28,4 +19,17 @@ CREATE TABLE article (
     "createdAt" TIMESTAMP NOT NULL,
     "updatedAt" TIMESTAMP NULL
 );
-
+CREATE TABLE documents (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  data BYTEA NOT NULL,
+  "createdAt" TIMESTAMP NOT NULL,
+  "updatedAt" TIMESTAMP NULL
+);
+/*No Implementada*/
+CREATE TABLE rol(
+    id SERIAL NOT NULL PRIMARY KEY,
+    rol_name VARCHAR(10) NOT NULL,
+    "createdAt" TIMESTAMP NOT NULL,
+    "updatedAt" TIMESTAMP NOT NULL
+);
