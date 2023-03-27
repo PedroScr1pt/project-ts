@@ -1,1 +1,0 @@
-docker run --name db_dacode_practica -e POSTGRES_USER=pedro -r POSTGRES_PASSWORD=password -e POSTGRES_DB=dacodes -p 5432:5432 -d postgres:13

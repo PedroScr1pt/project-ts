@@ -1,3 +1,4 @@
+/*Implementados*/
 CREATE TABLE users (
     id SERIAL NOT NULL PRIMARY KEY,
     name VARCHAR(50)NOT NULL,
@@ -19,13 +20,15 @@ CREATE TABLE article (
     "createdAt" TIMESTAMP NOT NULL,
     "updatedAt" TIMESTAMP NULL
 );
-CREATE TABLE documents (
-  id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
-  data BYTEA NOT NULL,
-  "createdAt" TIMESTAMP NOT NULL,
-  "updatedAt" TIMESTAMP NULL
+CREATE TABLE clients (
+    id SERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(30) NOT NULL UNIQUE,
+    client_article INTEGER REFERENCES article(id) on DELETE CASCADE,
+    "createdAt" TIMESTAMP NOT NULL,
+    "updatedAt" TIMESTAMP NULL
 );
+
+
 /*No Implementada*/
 CREATE TABLE rol(
     id SERIAL NOT NULL PRIMARY KEY,
@@ -33,3 +36,15 @@ CREATE TABLE rol(
     "createdAt" TIMESTAMP NOT NULL,
     "updatedAt" TIMESTAMP NOT NULL
 );
+
+CREATE TABLE documents (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  data BYTEA NOT NULL,
+  "createdAt" TIMESTAMP NOT NULL,
+  "updatedAt" TIMESTAMP NULL
+);
+
+user_id INTEGER REFERENCES users(id)
+
+ALTER TABLE article ADD COLUMN user_id INTEGER REFERENCES users(id);

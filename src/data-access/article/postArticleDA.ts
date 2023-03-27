@@ -16,6 +16,6 @@ export async function postArticleDA(db: PoolClient, article: Article) {
         ]);
         return rows[0]
     } catch (error) {
-        return error
+        return console.log(error)
     }
 }
